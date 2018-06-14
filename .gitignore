@@ -1,0 +1,4 @@
+#コミット除外ファイルを追加★
+.DS_Store
+Thumbs.db
+*.BAK
