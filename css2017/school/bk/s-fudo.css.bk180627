@@ -1,0 +1,1781 @@
+
+@charset "shift-jis";
+/* --------------------------------------------------------------------
+	Financial Academy
+
+	Style Info: cart setting
+
+-------------------------------------------------------------------- */
+
+
+/* -----------------------------------------------------
+	Basic Setting
+----------------------------------------------------- */
+
+/* basic multi column setting
+--------------------------- */
+.boxes {
+	padding: 0;
+}
+.boxL, .boxR {
+	display: table-cell;
+	vertical-align: top;
+}
+/* for IE6, 7 */
+* html .boxL,  * html .boxR {
+	display: inline;
+	zoom: 1;
+}
+*:first-child+html .boxL,  *:first-child+html .boxR {
+	display: inline;
+	zoom: 1;
+}
+
+
+/* -----------------------------------------------------
+	#header
+----------------------------------------------------- */
+
+header{
+	width:100%;
+	height:86px;
+	margin:0 auto;
+	background:url(/img2015/school/fudo/bg_header02.jpg) repeat-x left bottom;
+
+}
+header .headerIn {
+	width:950px;
+	height:86px;
+	font-size: 12px;
+	margin:15px auto 0;
+	background: url(/img2015/school/fudo/bg_header01.png) repeat-x left bottom;
+}
+
+header .headerIn p {
+	margin-top: 5px;
+	float: left;
+}
+header .headerIn .left{
+	float:left;
+}
+header .headerIn .right {
+	float: right;
+	width:433px;
+	margin-bottom: 15px;
+}
+
+header .headerIn .right ul {
+	margin-left: 37px;
+}
+
+header .headerIn .right li {
+	float: left;
+	position: relative;
+}
+
+header .headerIn .right li a {
+	text-decoration: none !important;
+	color: #000;
+}
+
+header .headerIn .right li img {
+	position: absolute;
+	top: 5px;
+	right: -16px;
+}
+
+header .headerIn .right li span {
+	margin: 0 4px 0 15px;
+}
+
+header .headerIn .right li span.cir01 {
+	color: #1e206b;
+}
+
+header .headerIn .right li span.cir02 {
+	color: #1eafe6;
+}
+
+header .headerIn .right li span.cir03 {
+	color: #eb7846;
+}
+
+header .headerIn .right li span.cir04 {
+	color: #50b98c;
+}
+
+header .headerIn .right p {
+	margin-left: 10px;
+}
+
+header .headerIn .right p img {
+	margin-left: 7px;
+}
+
+/* -----------------------------------------------------
+	1. Layout
+----------------------------------------------------- */
+
+
+h1 {
+	margin-bottom: 20px;
+}
+h2 {
+	margin-bottom: 30px;
+}
+h3 {
+	margin-bottom: 25px;
+}
+.h2Area {
+	padding: 0 40px;
+}
+h2#application, h2#taiken, h2#trial {
+	padding-top: 20px;
+}
+/* courseInfo table */
+
+/*.courseInfo {
+	border-top: 1px solid #b6b6b6;
+	border-left: 1px solid #b6b6b6;
+	margin-bottom: 30px;
+	width: 100%;
+}
+.courseInfo th, .courseInfo td {
+	border-right: 1px solid #b6b6b6;
+	border-bottom: 1px solid #b6b6b6;
+	padding: 8px 17px;
+}
+.courseInfo td.formSelect {
+	padding: 15px 17px;
+}
+.courseInfo th {
+	text-align: center;
+}
+.courseInfo thead th {
+	background: #f0fbff;
+	font-size: 24px;
+	color: #0699e8;
+}
+.courseInfo thead th span {
+	color: #ff6600;
+	font-size: 50%;
+}
+.courseInfo tbody th {
+	border-right: none;
+	background: #fafafa url(/img2010/includes/line_vertical_dotted_3.gif) repeat-y right top;
+	width: 255px;
+}*/
+/* planList */
+.planList {
+	width: 100%;
+	margin: 0 auto;
+}
+.planList td {
+	border: 1px solid #ccc;
+	padding: 20px;
+}
+.planList .planL {
+	border-right: none;
+}
+.planList .planR {
+	border-left: none;
+	width: 227px;
+}
+/**/
+.circleList li {
+	text-indent: -1.2em;
+	margin-left: 1.2em;
+}
+/* notice */
+.notice {
+	background: transparent url(/img2010/includes/line_side_1.gif) repeat-x scroll left top;
+	font-size: 85%;
+	padding-top: 20px;
+}
+.notice .noticeList01 li {
+	margin-left: 1.0em;
+	text-indent: -1.0em;
+}
+.notice .noticeList02 {
+	margin-left: 1.0em;
+}
+.notice .noticeList02 li {
+	margin-left: 1.0em;
+	text-indent: -1.0em;
+}
+
+/* tab menu
+--------------------------- */
+.tabArea ul.tabMenuTop li {
+	float: left;
+}
+.tabArea ul.tabMenuBtm li {
+	float: right;
+}
+.tabArea ul.tabMenuTop li a, .tabArea ul.tabMenuBtm li a {
+	display: block;
+	height: 37px;
+	overflow: hidden;
+	text-indent: -9999px;
+	outline: 0;
+}
+.tabArea ul.tabMenuTop li.tab1 a {
+	background: url(/img2010/school/tabtop01.gif) no-repeat left top;
+	width: 194px;
+}
+.tabArea ul.tabMenuTop li.tab1 a.tabCurrent {
+	background: url(/img2010/school/tabtop01_on.gif) no-repeat left top;
+}
+.tabArea ul.tabMenuTop li.tab2 {
+	margin: 0 2px;
+}
+.tabArea ul.tabMenuTop li.tab2 a {
+	background: url(/img2010/school/tabtop02.gif) no-repeat left top;
+	width: 195px;
+}
+.tabArea ul.tabMenuTop li.tab2 a.tabCurrent {
+	background: url(/img2010/school/tabtop02_on.gif) no-repeat left top;
+}
+.tabArea ul.tabMenuTop li.tab3 a {
+	background: url(/img2010/school/tabtop03.gif) no-repeat left top;
+	width: 195px;
+}
+.tabArea ul.tabMenuTop li.tab3 a.tabCurrent {
+	background: url(/img2010/school/tabtop03_on.gif) no-repeat left top;
+}
+.tabArea ul.tabMenuTop li.tab4 a {
+	background: url(/img2010/school/tabtop04.gif) no-repeat left top;
+	width: 195px;
+}
+.tabArea ul.tabMenuTop li.tab4 a.tabCurrent {
+	background: url(/img2010/school/tabtop04_on.gif) no-repeat left top;
+}
+/* tab bottom */
+.tabArea ul.tabMenuBtm li.tab1 a {
+	background: url(/img2010/school/tabbottom01.gif) no-repeat left top;
+	width: 134px;
+}
+.tabArea ul.tabMenuBtm li.tab1 a.tabCurrent {
+	background: url(/img2010/school/tabbottom01_on.gif) no-repeat left top;
+}
+.tabArea ul.tabMenuBtm li.tab2 {
+	margin: 0 2px;
+}
+.tabArea ul.tabMenuBtm li.tab2 a {
+	background: url(/img2010/school/tabbottom02.gif) no-repeat left top;
+	width: 135px;
+}
+.tabArea ul.tabMenuBtm li.tab2 a.tabCurrent {
+	background: url(/img2010/school/tabbottom02_on.gif) no-repeat left top;
+}
+.tabArea ul.tabMenuBtm li.tab3 a {
+	background: url(/img2010/school/tabbottom03.gif) no-repeat left top;
+	width: 135px;
+}
+.tabArea ul.tabMenuBtm li.tab3 a.tabCurrent {
+	background: url(/img2010/school/tabbottom03_on.gif) no-repeat left top;
+}
+.tabArea ul.tabMenuBtm li.tab4 a {
+	background: url(/img2010/school/tabbottom04.gif) no-repeat left top;
+	width: 135px;
+}
+.tabArea ul.tabMenuBtm li.tab4 a.tabCurrent {
+	background: url(/img2010/school/tabbottom04_on.gif) no-repeat left top;
+}
+/* tab menu
+--------------------------- */
+.tabArea ul.tabMenuTop2 li {
+	float: left;
+}
+.tabArea ul.tabMenuBtm2 li {
+	float: right;
+}
+.tabArea ul.tabMenuTop2 li a, .tabArea ul.tabMenuBtm2 li a {
+	display: block;
+	height: 37px;
+	overflow: hidden;
+	text-indent: -9999px;
+	outline: 0;
+}
+.tabArea ul.tabMenuTop2 li.tab1 a {
+	background: url(/img2010/school/tabtop_taiken.gif) no-repeat left top;
+	width: 194px;
+}
+.tabArea ul.tabMenuTop2 li.tab1 a.tabCurrent2 {
+	background: url(/img2010/school/tabtop_taiken_on.jpg) no-repeat left top;
+}
+.tabArea ul.tabMenuTop2 li.tab2 {
+	margin: 0 2px;
+}
+.tabArea ul.tabMenuTop2 li.tab2 a {
+	background: url(/img2010/school/tabletop_school2.jpg) no-repeat left top;
+	width: 240px;
+}
+.tabArea ul.tabMenuTop2 li.tab2 a.tabCurrent2 {
+	background: url(/img2010/school/tabtop_school_on2.jpg) no-repeat left top;
+}
+/* tab bottom */
+.tabArea ul.tabMenuBtm2 li.tab1 a {
+	background: url(/img2010/school/tabbottom_taiken.gif) no-repeat left top;
+	width: 160px;
+}
+.tabArea ul.tabMenuBtm2 li.tab1 a.tabCurrent2 {
+	background: url(/img2010/school/tabbottom_taiken_on.gif) no-repeat left top;
+}
+.tabArea ul.tabMenuBtm2 li.tab2 {
+	margin: 0 2px;
+}
+.tabArea ul.tabMenuBtm2 li.tab2 a {
+	background: url(/img2010/school/tabbottom_taiken_school2.jpg) no-repeat left top;
+	width: 180px;
+}
+.tabArea ul.tabMenuBtm2 li.tab2 a.tabCurrent2 {
+	background: url(/img2010/school/tabbottom_taiken_school_on2.jpg) no-repeat left top;
+}
+.blockContents {
+	border-top: 14px solid #f48a00;
+	border-bottom: 14px solid #f48a00;
+	border-left: 1px solid #d3d3d3;
+	border-right: 1px solid #d3d3d3;
+	padding: 30px 39px;
+}
+/* staff tab Area
+--------------------------- */
+
+.orangeArea {
+	padding: 20px;
+	background: #fff7ed;
+}
+.whiteArea {
+	padding: 20px;
+	background: #ffffff;
+	color: #01009a;
+}
+.profileTab {
+}
+.profileTab .cellL {
+	width: 200px;
+}
+.profileTab .cellR {
+	width: 460px;
+}
+/* Voice tab Area
+--------------------------- */
+
+.blueNetArea {
+	padding: 20px;
+	background: url(/img2010/school/pic_20.gif) repeat-y center top;
+}
+.orangeList li {
+	margin-bottom: 7px;
+}
+.orangeList li span {
+	background: #ffdfb4;
+	padding: 4px;
+	font-weight: bold;
+}
+.studentVoice {
+	border: 1px solid #f5bd85;
+	margin-bottom: 20px;
+	width: 100%;
+}
+.studentVoice td {
+	border: 1px solid #f5bd85;
+	padding: 4px 20px;
+}
+.studentVoice tr.title01 td {
+	background: #ffecd2;
+}
+.studentVoice tr.title02 td {
+	background: #fffaf4;
+	padding: 10px 20px;
+}
+.studentVoice .cellL {
+	padding: 20px;
+	width: 65px;
+	border-right: none;
+}
+.studentVoice .cellR {
+	padding: 20px 20px 20px 0;
+	width: 755px;
+	border-left: none;
+}
+.purchaseReport {
+	background: url(/img2010/school/pic_28.gif) no-repeat center top;
+	width: 88%;
+	height: 90px;
+	max-width:427px
+}
+.reportL {
+	float: left;
+	padding: 20px;
+	display: inline;
+}
+.reportR {
+	float: right;
+	padding: 30px 20px 0 20px;
+	display: inline;
+}
+.purchaseReport .innerL {
+	float: left;
+	width: 10%;
+}
+.purchaseReport .innerR {
+	float: right;
+	width: 80%;
+}
+.purchaseReport {
+	line-height:1.2;
+	margin:0 auto;
+}
+/* Summary tab Area
+--------------------------- */
+
+.starList li {
+	padding-left: 43px;
+	margin: 0 0 5px;
+}
+.starList li.odd {
+	background: #fff url(/img2010/school/icon_01.gif) no-repeat 10px 0;
+}
+.starList li.even {
+	background: #f8f8f8 url(/img2010/school/icon_01.gif) no-repeat 10px 0;
+}
+.starList2 li {
+	padding-left: 43px;
+	margin: 0 0 5px;
+}
+.starList2 li.odd {
+	background: #fff url(/img2010/school/icon_orange.gif) no-repeat scroll 1.2em 0.5em;
+}
+.starList2 li.even {
+	background: #f8f8f8 url(/img2010/school/icon_orange.gif) no-repeat scroll 1.2em 0.5em;
+}
+.lectureWrap {
+	margin-left: 60px;
+}
+.lectureContents {
+	background: url(/img2010/school/pic_07.gif) no-repeat center top;
+	width: 210px;
+	height: 87px;
+}
+.lectureL {
+	float: left;
+	padding: 20px 15px 0 15px;
+	display: inline;
+	margin-right: 15px;
+}
+.lectureC {
+	float: left;
+	padding: 20px 15px 0 15px;
+	display: inline;
+	margin-right: 15px;
+}
+.lectureR {
+	float: left;
+	padding: 20px 15px 0 15px;
+	display: inline;
+}
+.arrowLink {
+	background: url(/img2010/common/arrow_textlink.gif) no-repeat scroll left 0.5em;
+	padding-left: 14px;
+}
+.merit7List li.txt {
+	margin: 0 0 10px 80px;
+}
+/* jukoFlow Area setting */
+.jukoFlow {
+	border: 1px solid #cccccc;
+	padding: 10px;
+}
+.jukoFlow .boxes {
+	padding: 0;
+}
+/* Refund Policy Area setting */
+.refundPolicy {
+	border: 1px solid #cccccc;
+	padding: 20px;
+}
+.refundPolicy h3 {
+	margin-bottom: 10px;
+	background: url(/img2010/includes/line_side_dotted_3.gif) repeat-x left bottom;
+	padding-bottom: 5px;
+}
+.refundPolicy .boxes {
+	padding: 0;
+}
+.refundPolicy a {
+	background: url(/img2010/common/arrow_textlink.gif) no-repeat scroll left 0.5em;
+	padding-left: 14px;
+}
+.orangeTable {
+	border: 1px solid #f5bd85;
+	width: 100%;
+}
+.orangeTable td {
+	background: #fffaf4;
+	border: 1px solid #f5bd85;
+	padding: 4px 20px;
+}
+.orangeTable td.w50 {
+	width: 50%;
+}
+.orangeTable td.w33 {
+	width: 33%;
+}
+.fudoCourse {
+	margin-bottom: 15px;
+	width: 100%;
+}
+.fudoCourse td {
+	border: 1px solid #f5bd85;
+	padding: 15px 20px;
+	width: 49%;
+}
+.fudoCourse tr.title01 td {
+	background: #ffecd2;
+	padding: 4px 20px;
+}
+.fudoCourse tr.title01 td.blank {
+	padding: 0;
+}
+.fudoCourse td.blank {
+	border-top: none;
+	border-bottom: none;
+	background: none;
+	padding: 0;
+	width: 2%;
+}
+.fudoCourse tr.title01 td.blank {
+	background: none;
+}
+.appliBtn {
+	vertical-align: middle;
+	margin-left: 20px;
+}
+
+/* Main Contents setting
+--------------------------- */
+/* multi column setting for main contents */
+.boxL {
+	padding-right: 30px;
+}
+.pattern01 .boxL {
+	width: 584px;
+}
+.pattern01 .boxR {
+	width: 256px;
+}
+.pattern02 .boxL {
+	width: 86px;
+}
+.pattern02 .boxR {
+	width: 754px;
+}
+.pattern03 .boxL {
+	width: 136px;
+}
+.pattern03 .boxR {
+	width: 662px;
+}
+.pattern04 .boxL {
+	width: 584px;
+}
+.pattern04 .boxR {
+	width: 256px;
+}
+.pattern05 .boxL {
+	width: 101px;
+}
+.pattern05 .boxR {
+	width: 699px;
+}
+/* -----------------------------------------------------
+	Common Module
+----------------------------------------------------- */
+
+.tac {
+padding-left:10px;
+padding-right:10px;
+}
+.tar {
+	text-align: right;
+}
+.txtColorOrange {
+	color: #ff6600;
+}
+.txtColorRed {
+	color: #ff0000;
+}
+.txtColorLightBlue{
+	color:#0091d7;
+}
+.mb50 {
+	margin-bottom: 30px;
+}
+.mb60 {
+	margin-bottom: 60px;
+}
+.mb70 {
+	margin-bottom: 70px;
+}
+.ml10 {
+	margin-left: 10px;
+}
+.ml20 {
+	margin-left: 20px;
+}
+.ml35 {
+	margin-left: 35px;
+}
+/* add 2015/8 */
+
+.school201508 .schoolNav {
+	display: block;
+	width: 100%;
+	overflow: hidden;
+	margin:15px 0 10px;
+}
+.school201508 .schoolNav li {
+	display: block;
+	width: 190px;
+	float: left;
+	height: 40px;
+	background: url(/img2015/school/fudo/bg_navi.png) left top no-repeat;
+}
+.school201508 .schoolNav li a {
+	display: block;
+	width: 190px;
+	height: 40px;
+	text-indent: -9999px;
+}
+.school201508 .schoolNav li:nth-child(2) {
+	display: block;
+	width: 190px;
+	float: left;
+	height: 40px;
+	background: url(/img2015/school/fudo/bg_navi.png) left top no-repeat;
+	background-position: -190px 0;
+}
+.school201508 .schoolNav li:nth-child(3) {
+	display: block;
+	width: 190px;
+	float: left;
+	height: 40px;
+	background: url(/img2015/school/fudo/bg_navi.png) left top no-repeat;
+	background-position: -380px 0;
+}
+.school201508 .schoolNav li:nth-child(4) {
+	display: block;
+	width: 190px;
+	float: left;
+	height: 40px;
+	background: url(/img2015/school/fudo/bg_navi.png) left top no-repeat;
+	background-position: -570px 0;
+}
+.school201508 .schoolNav li:nth-child(5) {
+	display: block;
+	width: 190px;
+	float: left;
+	height: 40px;
+	background: url(/img2015/school/fudo/bg_navi.png) left top no-repeat;
+	background-position: -760px 0;
+}
+.school201508 #breadcrumbs{
+	float:left;
+	margin:10px 0 20px;
+}
+.school201508 .headerLast .snsBtn{
+	margin:10px 0 20px;
+	float:right;
+}
+.school201508 .headerLast .snsBtn .fb-like{
+	float:left;
+	margin-right:10px;
+}
+.school201508 .headerLast .snsBtn .mixi{
+	float:right;
+}
+.school201508 .title {
+	text-align: center;
+	padding-top:20px;
+	border-top: 3px solid #0091d7;
+	position:relative;
+}
+
+.school201508 .title h1 {
+	margin:0 auto;
+	width: 100%;
+}
+.school201508 .title h1 img {
+	display:none;
+}
+.school201508 .title h1 span {
+	display:block;
+	color:#FFF;
+	font-size:6vw;
+}
+.school201508 .title .spfv b {
+	font-size:3.5vw;
+}
+.school201508 .title p {
+	font-size: 14px;
+	color: #333;
+}
+.school201508 .title p.fsttxt {
+	margin-top:30%;
+	padding:0 10px;
+}
+.school201508 .title p b{
+	font-size:14px;
+	color:#FFF;
+}
+.school201508 .title p img{
+}
+.school201508 .title a {
+	display: inline-block;
+	margin: 0 0 50px;
+}
+.school201508 .title .spfv {
+	position: absolute;
+  top: 15%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%); /* Safarióp */
+  transform: translate(-50%, -50%);
+	z-index: +10;
+	width:100%;
+}
+.school201508 .contentBlock h2 {
+	border-left: 8px solid #0091d7;
+	padding-left: 20px !important;
+	box-sizing: border-box;
+	font-size:18px;
+	font-weight:bold;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+.school201508 .contentBlock h3 {
+	font-size: 18px;
+	font-weight: bold;
+	color: #0091d7;
+	margin-bottom: 20px;
+}
+.school201508 .contentBlock01 h2 {
+	padding-left: 0;
+}
+.school201508 .contentBlock .canLearn {
+	display: block;
+	background-color: #e5f4fb;
+	padding: 10px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	margin-bottom: 35px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.school201508 .contentBlock .canLearn ul.point {
+	overflow: hidden;
+}
+.school201508 .contentBlock .canLearn ul.point li {
+	display: block;
+	width: 100%;
+	overflow: hidden;
+	margin-bottom: 20px;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 1.3;
+}
+.school201508 .contentBlock .canLearn ul.point li:nth-child(1) p, .school201508 .contentBlock .canLearn ul.point li:nth-child(2) p {
+	margin-top: 13px;
+}
+.school201508 .contentBlock .canLearn ul.point li:nth-child(4) {
+	margin-bottom: 0;
+}
+.school201508 .contentBlock .canLearn ul.point li img {
+	float: left;
+	margin-right: 10px;
+	width: 100px;
+	height: auto;
+}
+.school201508 .contentBlock .canLearn .recommend {
+	display: block;
+	padding: 10px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	background-color: #FFF;
+	margin-top: 35px;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+}
+.school201508 .contentBlock .canLearn .recommend ul {
+	display: inline-block;
+	text-align: left;
+	font-size: 14px;
+	line-height: 2;
+}
+.school201508 .contentBlock .canLearn .recommend ul li:before {
+	content: 'Åú';
+	font-size: 11px;
+	color: #0091d7;
+	margin-right: 5px;
+}
+.school201508 .contentBlock02 {
+	margin-top: 50px;
+}
+.school201508 .contentBlock .voiceBox {
+	display: block;
+	width: 100%;
+	background-color: #e5f4fb;
+	font-size: 14px;
+	margin-bottom: 35px;
+}
+.school201508 .contentBlock .voiceBox .mainVoice {
+	padding: 10px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	overflow: hidden;
+}
+.school201508 .contentBlock .voiceBox .mainVoice img {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 10px;
+}
+.school201508 .contentBlock .voiceBox .mainVoice .text {
+	display: block;
+}
+.school201508 .contentBlock .voiceBox .mainVoice .text p {
+	margin-bottom: 20px;
+}
+.school201508 .contentBlock .voiceBox .mainVoice .text p.txtColorLightBlue{
+	font-weight:bold;
+}
+.school201508 .contentBlock .voiceBox .mainVoice .text p .strong {
+	font-weight: bold;
+}
+.school201508 .contentBlock .voiceBox .mainVoice .text p:last-child {
+	margin-bottom: 0;
+}
+.school201508 .contentBlock .voiceBox .mainVoice .text h4 {
+	margin-bottom: 10px;
+}
+.school201508 .contentBlock .voiceBox .mainVoice .text h4:before {
+	content: 'Å°';
+	margin-right: 5px;
+	color: #2d4196;
+}
+.school201508 .contentBlock .voiceBox ul {
+	display: block;
+	width: 100%;
+	overflow: hidden;
+	border-top: 1px solid #fff;
+}
+.school201508 .contentBlock .voiceBox ul li {
+	width: 316px;
+	height:161px;
+	float: left;
+	font-size:13px;
+	display: block;
+	padding: 30px 25px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	background-color: #d9eff9;
+	border-right: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+}
+.school201508 .contentBlock .voiceBox ul li:nth-child(2n) {
+	background-color: #f2f9fd;
+}
+.school201508 .contentBlock .voiceBox ul li:nth-child(3n) {
+	border-right: none;
+	width: 318px;
+}
+.school201508 .contentBlock .voiceBox ul li:nth-child(4), .school201508 .contentBlock .voiceBox ul li:nth-child(5), .school201508 .contentBlock .voiceBox ul li:nth-child(6) {
+	height: 236px;
+}
+.school201508 .contentBlock .voiceBox ul li img {
+	display: block;
+	float: left;
+}
+.school201508 .contentBlock .voiceBox ul li p {
+	display: block;
+	width: 200px;
+	float: right;
+}
+.school201508 .contentBlock03 {
+	margin-top: 50px;
+}
+.school201508 .contentBlock03 .term {
+	overflow: hidden;
+	margin-top: 35px;
+}
+.school201508 .contentBlock03 .term li {
+	display: block;
+	width: 100%;
+	float: left;
+	margin-right: 1px;
+}
+.school201508 .contentBlock03 .term li:last-child {
+	margin-right: 0;
+}
+.school201508 .contentBlock03 .term li h3 {
+	background-color: #0091d7;
+	display: block;
+	width: 100%;
+	padding: 10px 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	text-align: center;
+	font-size: 24px;
+	font-weight: normal;
+	color: #fff;
+	margin-bottom: 0;
+}
+.school201508 .contentBlock03 .term li p {
+	background-color: #e5f4fb;
+	padding: 15px;
+	height: 166px;
+	display: block;
+}
+.school201508 .contentBlock03 .term li p span {
+	display: inline-block;
+	border-top: 1px solid #2d4196;
+	padding-top: 15px;
+	margin-top: 15px;
+	color: #666;
+}
+.school201508 .contentBlock03 .term li h3 span {
+	font-size: 13px;
+}
+.school201508 .contentBlock03 dl {
+	margin-top: 35px;
+}
+.school201508 .contentBlock03 dl dt {
+	display: block;
+	width: 100%;
+	background-color: #e5f4fb;
+	border: 1px solid #b2def3;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+	color: #0091d7;
+	padding: 5px 0;
+	position: relative;
+	cursor: pointer;
+}
+.school201508 .contentBlock03 dl dt:after {
+	content: "";
+	display: block;
+	width: 17px;
+	height: 11px;
+	background-image: url(/img2015/school/fudo/icon_arrow_open.png);
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 20px;
+	right: 15px;
+}
+.school201508 .contentBlock03 dl dt.active:after {
+	background-image: url(/img2015/school/fudo/icon_arrow_close.png);
+	background-repeat: no-repeat;
+	background-position: center right;
+}
+.school201508 .contentBlock03 dl dd {
+	overflow: hidden;
+	display: block;
+	padding: 10px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+.school201508 .contentBlock03 dl dd ul {
+	width:100%;
+}
+.school201508 .contentBlock03 dl dd ul h4 {
+	font-size: 14px;
+	color: #0091d7;
+	font-weight: normal;
+}
+.school201508 .contentBlock03 dl dd ul p {
+	font-size: 12px;
+	line-height: 2;
+	margin-bottom: 35px;
+}
+.school201508 .contentBlock03 .movie {
+	display: block;
+	width: 100%;
+	overflow: hidden;
+	border: 1px solid #b2def3;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	margin: 35px 0 30px;
+}
+.school201508 .contentBlock03 .movie img {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+.school201508 .contentBlock03 .movie .text {
+	display: inline-block;
+	font-size: 14px;
+	line-height: 1.4;
+	margin: 10px 10 0 10px;
+}
+.school201508 .contentBlock03 .movie .text img {
+}
+.school201508 .contentBlock03 .movie .text p {
+	margin-bottom: 10px;
+}
+.school201508 .contentBlock03 .movie .text span {
+	font-weight: bold;
+}
+
+.school201508 .contentBlock04 h4 {
+	color: #0091d7;
+	font-size:16px;
+	margin-top: 0;
+	margin-right: 0;
+	margin-bottom: 15px;
+}
+.school201508 .contentBlock04 h4 span {
+	color: #7fc8eb;
+	font-size:12px;
+	vertical-align:middle;
+}
+.school201508 .contentBlock04 .teacherProfile {
+	display: block;
+	border-radius: 20px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	margin-top: 0;
+	margin-bottom: 30px;
+}
+
+.school201508 .contentBlock04 .teacherProfile .title {
+	border: none;
+	background-color: #f2f9fd;
+	border-radius: 8px 8px 0 0;
+	border-top: 1px solid #d9eff9;
+	border-right: 1px solid #d9eff9;
+	border-left: 1px solid #d9eff9;
+	overflow: hidden;
+	padding: 10px;
+}
+
+.school201508 .contentBlock04 .teacherProfile .title img {
+	float: left;
+	height: 100px;
+	width: 100px;
+}
+.school201508 .contentBlock04 .teacherProfile .title p {
+	display: block;
+	text-align: left;
+	font-size: 14px;
+	padding: 0 0 0 110px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	background-image: url(/img2015/school/fudo/icon_inyou02.png), url(/img2015/school/fudo/icon_inyou02-02.png);
+	background-position: left top, right bottom;
+	background-repeat: no-repeat, no-repeat;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 0;
+}
+
+.school201508 .contentBlock04 .teacherProfile ul {
+	padding: 10px;
+	box-sizing: border-box;
+	border-bottom: 1px solid #d9eff9;
+	border-right: 1px solid #d9eff9;
+	border-left: 1px solid #d9eff9;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	overflow: hidden;
+	border-radius: 0px 0px 8px 8px;
+}
+.school201508 .contentBlock04 .teacherProfile ul li {
+	display: block;
+}
+.school201508 .contentBlock04 .teacherProfile ul li p.name {
+	font-size: 18px;
+	font-weight: bold;
+}
+.school201508 .contentBlock04 .teacherProfile ul li:last-child {
+	color:#222222;
+	font-size:13px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+.school201508 .contentBlock04 .courseList {
+	display: block;
+	width: 100%;
+	overflow: hidden;
+}
+#media_wrap {
+	border: solid 1px #cccccc;
+	padding: 5px 5px 10px;
+}
+#media_content {
+	height: 189px;
+	overflow: scroll;
+}
+/*-----------------------.experienceLearning---------------------------*/
+.school201508 .contentBlock05 .experienceLearning {
+	border: 2px solid #0091d7;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	overflow: hidden;
+	padding: 0 10px 30px;
+	margin: 30px 0;
+}
+.school201508 .contentBlock05 .experienceLearning h3 {
+	background-color: #0091d7;
+	text-align: center;
+	color: #fff;
+	font-size: 18px;
+	margin: 0 -10px 10px;
+	padding: 5px 0;
+}
+.school201508 .contentBlock05 .experienceLearning h4 {
+	font-size: 14px;
+	color: #FFF;
+	background-color:#fd9827;
+	text-align: center;
+	margin-right: 10px;
+	display:inline;
+	padding:5px;
+	margin-bottom:10px;
+}
+.school201508 .contentBlock05 .experienceLearning span.subtxt {
+	display:block;
+	margin:5px 0;
+}
+.school201508 .contentBlock05 .experienceLesarning p {
+	font-size: 12px;
+	margin-bottom: 10px;
+}
+.school201508 .contentBlock05 .experienceLearning table {
+	border: 1px solid #b6b6b6;
+	width: 98%;
+	left: 0;
+	right: 0;
+	margin: 0 auto 25px;
+}
+.school201508 .contentBlock05 .experienceLearning table tr {
+}
+.school201508 .contentBlock05 .experienceLearning table th {
+	background-color: #fafafa;
+	text-align: left;
+	width: 96%;
+	padding: 10px 2%;
+	display: block;
+	background-image:none;
+	border-bottom: 1px solid #b6b6b6;
+}
+.school201508 .contentBlock05 .experienceLearning table td {
+	padding: 10px 2%;
+	width: 96%;
+	display: block;
+}
+.school201508 .contentBlock05 .experienceLearning table th.title03 {
+	font-size: 18px;
+	background-color: #1c236d;
+	color: #fff;
+}
+.orangeFont {
+	color: #ff6500;
+}
+.school201508 .contentBlock05 .experienceLearning p.free {
+	text-align: center;
+}
+.school201508 .contentBlock05 .experienceLearning table p.fontore {
+	color:#FD9827;
+	font-weight:bold;
+	font-size: 18px;
+	margin-bottom: 0;
+}
+.web_dvd {
+	margin: 0 auto;
+}
+.school201508 .contentBlock05 .experienceLearning p.web {
+	padding-top: 10px;
+	float: left;
+}
+.school201508 .contentBlock05 .experienceLearning p.dvd {
+	padding-top: 10px;
+	float: right;
+}
+.school201508 .contentBlock05 .experienceLearning p.homeLearning {
+	margin: 30px 0 20px;
+	font-weight: bold;
+	text-align: center;
+	font-size: 18px;
+}
+.school201508 .contentBlock05 .experienceLearning p.homeLearning strong {
+	color: #1c236d;
+	font-size: 20px;
+}
+.school201508 .contentBlock05 .tsushin-tsugaku {
+	border: 2px solid #0091d7;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	overflow: hidden;
+	margin-bottom:30px;
+	width: 100%;
+}
+.school201508 .contentBlock05 .tsushin-tsugaku h3 {
+	background-color: #0091d7;
+	text-align: center;
+	color: #fff;
+	font-size: 18px;
+	padding: 5px 0;
+}
+.school201508 .contentBlock05 .courseList{
+padding-left:10px;
+padding-right:10px;
+}
+.school201508 .contentBlock05 .courseList li {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.school201508 .contentBlock05 .courseList li:last-child {
+
+}
+.school201508 .contentBlock05 .courseList li h4 {
+	font-size: 18px;
+	color: #333;
+}
+.school201508 .contentBlock05 .courseList li p.recommend02 {
+	font-size: 14px;
+	color: #0091d7;
+	line-height: 1.4;
+	font-weight: bold;
+	border-left: 5px solid #0091d7;
+	padding-left: 15px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	margin: 10px 0px 15px;
+}
+
+.school201508 .contentBlock05 .courseList li a {
+	display: block;
+	text-align: center;
+}
+.school201508 .contentBlock05 .courseList li table {
+	width: 100%;
+	height: auto;
+	margin: 0px auto 20px;
+	padding: 0px;
+}
+.school201508 .contentBlock05 .courseList li table span {
+	font-weight: bold;
+}
+.school201508 .contentBlock05 .courseList li table th {
+	background-color: #e5f4fb;
+	padding: 10px 2%;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	border-bottom: 1px solid #fff;
+	font-weight: normal;
+	white-space: nowrap;
+	display: block;
+	width: 96%;
+	margin: 0px;
+}
+.school201508 .contentBlock05 .courseList li table td {
+	background-color: #f2f9fd;
+	padding: 10px 2%;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	border-bottom: 1px solid #fff;
+	display: block;
+	width: 96%;
+}
+
+.school201508 .contentBlock05 .courseList li p span{
+	display:block;
+	color: #2d4196;
+	font-size: 15px;
+	font-weight:bold;
+	margin-bottom:8px;
+}
+.school201508 .contentBlock05 dl {
+	margin-top: 35px;
+}
+.school201508 .contentBlock05 dl dt {
+	display: block;
+	width: 100%;
+	background-color: #e5f4fb;
+	border: 1px solid #b2def3;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	text-align: center;
+	font-size: 22px;
+	font-weight: bold;
+	color: #0091d7;
+	padding: 5px 0;
+	position: relative;
+	cursor: pointer;
+}
+.school201508 .contentBlock05 dl dt:after {
+	content: "";
+	display: block;
+	width: 17px;
+	height: 11px;
+	background-image: url(/img2015/school/fudo/icon_arrow_open.png);
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 20px;
+	right: 15px;
+}
+.school201508 .contentBlock05 dl dt.active:after {
+	background-image: url(/img2015/school/fudo/icon_arrow_close.png);
+	background-repeat: no-repeat;
+	background-position: center right;
+}
+.school201508 .contentBlock05 dl dd p {
+	margin: 30px 0;
+}
+
+.cp3 {
+	padding-top:0px;
+}
+
+.school201508 .contentBlock h2.kakko_h2 {
+	padding-left:13px !important;
+}
+
+/*151125*/
+.other_teacher {
+	margin-top: 0;
+	margin-bottom: 50px;
+}
+
+.other_teacher ul li {
+	border:solid 1px #d9eff9;
+	border-radius:15px 15px;
+	width:100%;
+	float:none;
+	margin-bottom:33px;
+}
+
+.right_other_teacher p {
+	line-height:1.5;
+}
+
+.other_teacher ul li.left_li {
+	margin-right:0px;
+}
+
+.other_teacher ul li h4 {
+	font-size:1.4em;
+}
+
+.other_teacher ul li h5 {
+	padding:0px 0px 5px 0px;
+	color:#0091d7;
+}
+
+.other_teacher ul li .ryakureki_teacher p {
+	line-height:1.5;
+}
+
+.ryakureki_teacher {
+	border-top:dotted 1px #b2def3;
+	margin:10px;
+}
+
+.jisseki_teacher {
+	margin:10px;
+	line-height:1.5;
+}
+
+.other_teacher ul li .ryakureki_teacher h5 {
+	padding:20px 0px 5px 0px;
+	color:#0091d7;
+}
+
+.intro_teacher {
+	background:#f2f9fd;
+	padding:10px;
+	border-radius:15px 15px 0 0;
+}
+
+.left_other_teacher {
+	float:left;
+	width:100px;
+	margin-right: 10px;
+}
+
+.right_other_teacher {
+	float:none;
+}
+
+.contentBlock04 .right_other_teacher h4 {
+	margin-left:0px;
+}
+
+.center_other_teacher {
+	float:none;
+	height:auto;
+}
+
+
+/*160105_ìÆâÊîwåiñÑÇﬂçûÇ›*/
+.contents_mov_after_wrap {
+	margin:0 auto!important;
+	padding:0 0 20px 0;
+	width:94%;
+	text-align:left;
+}
+.sptopmov {
+	position:absolute !important;
+	top:0;
+	display:block;
+}
+
+.video_wrap {
+	position:relative;
+	margin:0px 0 30px 0;
+	width:100%;
+	height:auto;
+	overflow:hidden;
+}
+.video_wrap video { display:none; }
+
+.video_wrap img {
+	width:100%;
+	height:auto;
+	max-height: 200px;
+}
+video {
+    width: 100%;
+}
+
+/*160622_ê\çûÇ›ÇÃó¨ÇÍí«â¡*/
+.fl{
+	float:left;
+}
+.moshikomi_flow {
+    overflow: hidden;
+}
+
+.flow_up {
+    overflow: hidden;
+}
+
+.flow {
+    width: 14%;
+    margin-right: 1%;
+}
+
+.flow img {
+    width: 100%;
+}
+
+.flow_arrow {
+    width: 1%;
+    margin-right: 1%;
+    margin-top: 6%;
+}
+
+.flow_arrow img {
+    width: 100%;
+}
+
+.flow p {
+    background: #0091d7;
+    color: white;
+    text-align: center;
+    height: 35px;
+    /* line-height: 40px; */
+    font-size: 0.8em;
+    padding: 4px;
+}
+
+.flow_up {
+    margin-bottom: 10px;
+}
+div#flow_top p {
+    height: 94px;
+    /* line-height: 128px; */
+    font-size: 1.5em;
+    padding-top: 33px;
+}
+.flow_down {
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+/*160920_éÛçuê∂Ç©ÇÁÇÃï®åèçwì¸é¿ê—í«â¡*/
+
+.commentBoxScroll_fudo{
+	height: 300px;
+	padding-right: 5px;
+	overflow-y: scroll;
+}
+
+.ttl_jisseki {
+	color:#333;
+	border-left:#0091d7 4px solid;
+	border-bottom:#cccccc 2px solid;
+	padding-left:20px;
+	margin-top:50px;
+	margin-bottom:30px;
+	padding-bottom:10px;
+}
+.box_jisseki {
+	width:100%;
+	border:#ccc 1px solid;
+	margin-bottom:20px;
+}
+.box_jisseki_in {
+	margin:25px;
+}
+.box_jisseki .p_l {
+	width:120px;
+	float:left;
+}
+.box_jisseki .txt_r {
+	width:750px;
+	float:right;
+}
+.jsk_box_l .txt_r,
+.jsk_box_r .txt_r {
+	width:338px;
+	float:right;
+}
+.jsk_box_l .txt_r ul,
+.jsk_box_r .txt_r ul{
+	padding:10px;
+}
+.ttls_jisseki {
+	background-color:#c0e4f5;
+	padding:10px;
+}
+.btn_jsk {
+	width:400px;
+	margin:50px auto 50px;
+	font-size:20px;
+	border-radius: 6px;
+	border:#ccc 1px solid;
+	padding:10px;
+	text-align:center;
+	clear:both;
+}
+.btn_jsk a {
+	display:block
+}
+.jsk_box_l {
+	width:458px;
+	float:left;
+	margin-right:20px;
+	border:#ccc 1px solid;
+	margin-bottom:20px;
+}
+.jsk_box_r {
+	width:458px;
+	float:right;
+	border:#ccc 1px solid;
+	margin-bottom:20px;
+}
+.jsk_box_p {
+	width:120px;
+	float:left;
+}
+.icosc_blue {
+	color:#0091d7;
+}
+
+/*add20170201*/
+.fudoimg01 {
+	width: 45%;
+	margin-right: 2%;
+	display: block;
+}
+
+.youtube {
+	max-width:950px;
+	margin:0 auto;
+	width:100%;
+}
+.youtube iframe {
+	width:100%;
+	height:auto;
+}
+
+.contentBlock02 dl dt::after { display:none; }
+
+.voice_ac {
+	position:relative;
+}
+
+.contentBlock02 dl dt:after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 140px;
+	background-image: url(/img2015/school/fudo/fadeou_sp.png);
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 18px;
+}
+.contentBlock02 dl dt.active:after {
+	height: 50px;
+	background-image: url(/img2015/school/fudo/fadeout_close.png);
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 430px;
+}
+.movietxt {
+    font-size: 16px;
+    line-height: 1.4;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+.movietxt span { font-weight:bold; }
+
+#reason {
+    padding: 0 0 !important;
+}
+#reason h2 {
+    border-left: 8px solid #0091d7;
+    text-align: left;
+    line-height: 1;
+    margin-bottom: 30px;
+    padding-left: 10px;
+}
+.zengakuh_ttl_fudo {
+    font-size: 17px;
+    color: #0091d7;
+    font-weight: bold;
+    text-align: center;
+}
+.zengakuh_fudo {
+    width: 80%;
+    margin: 0 auto 20px;
+    clear: both;
+    background-color: #E5F4FB;
+    border: 1px solid #b2def3;
+    padding: 20px;
+}
+#media_wrap .mediaimg td {
+    border: none;
+    padding: 8px 1% !important;
+    width: 48% !important;
+    height: 150px;
+    display: block !important;
+    float: left;
+}
+
+#application {
+   margin-top:-88px;
+  padding-top:88px;
+}
+
+#contents .headerLast {
+	display:none;
+}
+#contents {
+	padding-top:80px;
+}
+
+
+/* 180111 í«â¡ */
+
+.school201508 .contentBlock04 .teacherProfile .title .teacher_name {
+	font-size:1.2em;
+  color:#0091d7;
+  text-align: left;
+}
+
+.school201508 .contentBlock04 .teacherProfile .title2 .teacher_name {
+	font-size:1.2em;
+  color:#0091d7;
+  text-align: left;
+   letter-spacing: 0.1em;
+}
+
+.school201508 .contentBlock04 .teacherProfile .title2 {
+	border: none;
+	background-color: #f2f9fd;
+	border-radius: 8px 8px 0 0;
+	border-top: 1px solid #d9eff9;
+	border-right: 1px solid #d9eff9;
+	border-left: 1px solid #d9eff9;
+	overflow: hidden;
+	padding: 10px;
+
+}
+
+.school201508 .contentBlock04 .teacherProfile .title2 p {
+	display: block;
+	text-align: left;
+	font-size: 14px;
+	padding: 0 0 0 10px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	background-image: url(/img2015/school/fudo/icon_inyou02.png), url(/img2015/school/fudo/icon_inyou02-02.png);
+	background-position: left top, right bottom;
+	background-repeat: no-repeat, no-repeat;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 0;
+}
+
+
+.school201508 .contentBlock04 .teacherProfile h5 {
+	padding:0px;
+	color:#0091d7;
+}
+
+.school201508 .contentBlock04 .teacherProfile .ryakureki_teacher h5 {
+	padding:20px 0px 5px 0px;
+	color:#0091d7;
+}
+
+
+.whyMore {
+ margin-top:0px !important;
+ margin-bottom:17px !important;
+}
+
+.whyMore span {
+ background-color:#0091d7;
+ border-radius:4px;
+ padding:5px;
+ color:#ffffff;
+ font-size:92%;
+ border-bottom:none !important;
+}
+
+.school201508 .contentBlock04 .teacherProfile .title .teacher_name {
+
+	font-size:1.2em;
+  text-align: left;
+  letter-spacing: 0.1em;
+}
