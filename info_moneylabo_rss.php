@@ -8,7 +8,7 @@
     $stg_category = $stg_rss->channel->item->category;
     $stg_content = $stg_rss->channel->item->enclosure->attributes()->url;
 
-    $more = mb_convert_encoding("もっと読む","sjis","utf-8");
+    $more = mb_convert_encoding("もっと読むむ","sjis","utf-8");
 
     echo '<div class="matchHeight"><a href="' . $stg_link . '" target="_blank">
            <img src="' . $stg_content . '">' . $stg_title . '</a></div>
